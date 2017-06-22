@@ -1,0 +1,18 @@
+#methods-selected{
+	border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    height: 60px;
+}
+span.glyphicon-plus{
+	cursor: pointer;
+}
+span.glyphicon-minus{
+	cursor: pointer;
+}
+.method-selected{
+	border-color: lightgrey;
+    border-width: 1px;
+    border-style: solid;
+    background: rgb(200, 200, 200);
+}
