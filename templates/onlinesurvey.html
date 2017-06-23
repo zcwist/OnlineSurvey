@@ -3,6 +3,7 @@
 {% block head %}
 <link href="{{url_for('static',filename='onlinesurvey.css')}}" rel="stylesheet">
 <script type="text/javascript" src="{{url_for('static',filename='onlinesurvey.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -56,7 +57,7 @@
 			</span>
 
 			<div class="questions"></div>
-			<button type="button" class="btn btn-Primary" id="submit">Add method</button>
+			<button type="button" class="btn btn-primary" id="submit">Submit survey model</button>
 		</div>
 	
 		
@@ -64,9 +65,16 @@
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<pre id="script"></pre>
+			<button type="button" class="btn btn-default copy-btn" id="copy" data-clipboard-target="#script">Copy to Clipboard</button>
+			<button type="button" class="btn btn-default" id="gotoscript">Go to Google Script</button>
+			<button type="button" class="btn btn-default" id="gotoform">Go to Google Form</button>
 		</div>
 	</div>
 </div> 
+
+
+
+
 <div id="template" style="display: none;">
 	<div class="form-group pre_question">
 		<label>Pre-question</label>

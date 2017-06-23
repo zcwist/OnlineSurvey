@@ -103,5 +103,18 @@ $(document).ready(function(){
             	$("#script").html(result.script);
             }
 		})
+	});
+
+	new Clipboard('.copy-btn');
+
+	function copyToClipboard(element) {
+		console.log($(element).text())
+		window.prompt("Copy to clipboard: Ctrl+C, Enter", $(element).text());
+	}
+	$("#gotoscript").click(function(){
+		window.open("https://script.google.com/",'_black');
+	})
+	$("#gotoform").click(function(){
+		window.open("https://docs.google.com/forms/u/0/",'_black');
 	})
 })
