@@ -6,6 +6,10 @@ $(document).ready(function(){
 		method_name = $("#method_name").val();
 		if (method_name != ""){
 			$("#methods-selected").append(newMethod(method_name));
+			$("#methods-selected span:last-child").dblclick(function(){
+				$(this).remove();
+			})
+
 		}
 	});
 

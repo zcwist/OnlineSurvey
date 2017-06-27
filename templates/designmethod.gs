@@ -1,4 +1,4 @@
-function testFunction() {
+function myFunction() {
   var form = FormApp.create("{{survey_name}}"); 
   {% for pre_quesiton in pre_questions %}form.addTextItem().setTitle("{{pre_quesiton}}");
   {% endfor %}
